@@ -2,15 +2,29 @@
 
 // BELOW Update the songs to your favorites songs. There should be at least 4.
 var songs = [
-    "24 Karat Magic",
-    "Nice For What",
-    "Universe"
+    "Despacito",
+    "Gangnam Style",
+    "Friday",
+    "Pokemon Go",
+    "Pen-Pinapple-Apple-Pen",
+    "Mine Diamonds"
 ];
 // BELOW Add 4 More arrays to store images_links, atists, song lengths, and links for each song
 // Make sure they match the same order as your array above
-
-
-
+var images_urls = [
+    "",
+    "",
+    "",
+    "",
+    "","","",
+    "","",
+    "",
+    "",
+    "","","","",
+];
+var artists = [];
+var songLength = [];
+var links = [];
 
 
 
