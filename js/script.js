@@ -1,5 +1,5 @@
 /* global $ */
-
+/* global localStorage */
 // BELOW Update the songs to your favorites songs. There should be at least 4.
 var songs = [
     "Despacito",
@@ -29,8 +29,7 @@ var songLength = [
     "4:12",
     "3:48",
     "1:16",
-    "2:43",
-    "",
+    "2:43"
 ];
 var links = [
     "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
@@ -39,7 +38,7 @@ var links = [
     "https://www.youtube.com/watch?v=vfc42Pb5RA8",
     "https://www.youtube.com/watch?v=Ct6BUPvE2sM"
 ];
-
+localStorage.setItem("s",songs);
 
 
 function displaySongInfo(){
@@ -64,17 +63,27 @@ function displaySongInfo(){
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
-
-
+    $("#songs").empty();
+    $("#images").empty();
+    $("#artists").empty();
+    $("#lengths").empty();
+    $("#links").empty();
 }
 
 
 function addSongInfo(){
     var songName = $("#song").val();
+    var img = $("#image").val();
+    var artist = $("#artist").val();
+    var time = $("#length").val();
+    var url = $("#link").val();
     songs.push(songName);
     // BELOW write the code to add new items to each of the other arrays
-
-
+    images_urls.push(img);
+    artists.push(artist);
+    songLength.push(time);
+    console.log(time);
+    links.push(url);
 }
 
 $("#add").click(function() {
